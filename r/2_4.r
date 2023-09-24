@@ -1,0 +1,1 @@
+hist(iris$Sepal.Width, xlab="Sepal Width", ylab="No. Of Iris", main="Histogram of Iris Sepal Width", col='blue',xlim=c(2,4.5))
