@@ -10,8 +10,12 @@ print(class(numeric_vector))
 
 print("Character Vector:")
 print(character_vector)
-print(class(character_vector))
+print(class(character_vector))j
+
+
 
 print("Logical Vector:")
+
+
 print(logical_vector)
 print(class(logical_vector))

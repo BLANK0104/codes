@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.12-preview" />
+  <PropertyGroup>
+    <Name>first</Name>
+    <ProjectGuid>{47311F88-9A87-443D-ADEF-F64D15B4D6F8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="name">
+      <Value>$(SqlCmdVar__1)</Value>
+      <DefaultValue>name</DefaultValue>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>
