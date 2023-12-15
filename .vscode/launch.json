@@ -5,11 +5,66 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "kotlin",
+            "type": "java",
+<<<<<<< HEAD
+            "name": "PrimeNumberChecker",
             "request": "launch",
-            "name": "Kotlin Launch",
-            "projectRoot": "${workspaceFolder}",
-            "mainClass": "path.to.your.MainClassKt"
+            "mainClass": "PrimeNumberChecker",
+=======
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+>>>>>>> main
+            "projectName": "codes_81f3006e"
+        },
+        {
+            "type": "java",
+            "name": "Trial",
+            "request": "launch",
+            "mainClass": "Trial",
+            "projectName": "codes_81f3006e"
+        },
+        {
+            "type": "R-Debugger",
+            "name": "Launch R-Workspace",
+            "request": "launch",
+            "debugMode": "workspace",
+            "workingDirectory": "${workspaceFolder}"
+        },
+        {
+            "type": "R-Debugger",
+            "name": "Debug R-File",
+            "request": "launch",
+            "debugMode": "file",
+            "workingDirectory": "${workspaceFolder}",
+            "file": "${file}"
+        },
+        {
+            "type": "R-Debugger",
+            "name": "Debug R-Function",
+            "request": "launch",
+            "debugMode": "function",
+            "workingDirectory": "${workspaceFolder}",
+            "file": "${file}",
+            "mainFunction": "main",
+            "allowGlobalDebugging": false
+        },
+        {
+            "type": "R-Debugger",
+            "name": "Debug R-Package",
+            "request": "launch",
+            "debugMode": "workspace",
+            "workingDirectory": "${workspaceFolder}",
+            "includePackageScopes": true,
+            "loadPackages": [
+                "."
+            ]
+        },
+        {
+            "type": "R-Debugger",
+            "request": "attach",
+            "name": "Attach to R process",
+            "splitOverwrittenOutput": true
         }
     ]
 }
